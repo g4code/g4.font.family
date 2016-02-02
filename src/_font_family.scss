@@ -1,0 +1,261 @@
+
+    @mixin setupf100($font_name){
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    /*italic thin font*/
+    @mixin setupf100i($font_name) {
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    /*light font*/
+    @mixin setupf300($font_name){
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /*italic light font*/
+    @mixin setupf300i($font_name) {
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    /*regular font*/
+    @mixin setupf400($font_name){
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /*regular italic font*/
+    @mixin setupf400i($font_name) {
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    /*medium font*/
+    @mixin setupf500($font_name){
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    /*medium italic font*/
+    @mixin setupf500i($font_name) {
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    /*bold font*/
+    @mixin setupf700($font_name){
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /*bold italic font*/
+    @mixin setupf700i($font_name) {
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    /*ULTRA bold font*/
+    @mixin setupf900($font_name){
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    /*ULTRA bold italic font */
+    @mixin setupf900i($font_name) {
+        font-family: $font_name, arial, sans-serif;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+@mixin font_family($font_family_name) {
+    /*loading fonts*/
+    @font-face {
+        font-family:  $font_family_name + '-Thin';
+        src: font-url( $font_family_name + "-Thin.eot");
+        src: font-url( $font_family_name + "-Thin.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Thin.woff") format("woff"), font-url( $font_family_name + "-Thin.ttf") format("truetype"), font-url( $font_family_name + "-Thin.svg#LegalTenderRegular") format("svg");
+        font-weight: 100;
+        font-style: normal;
+    }
+    @font-face {
+        font-family:  $font_family_name + '-ThinItalic';
+        src: font-url( $font_family_name + "-ThinItalic.eot");
+        src: font-url( $font_family_name + "-ThinItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-ThinItalic.woff") format("woff"), font-url( $font_family_name + "-ThinItalic.ttf") format("truetype"), font-url( $font_family_name + "-ThinItalic.svg#LegalTenderRegular") format("svg");
+        font-weight: 100;
+        font-style: normal;
+    }
+    @font-face {
+        font-family:  $font_family_name + '-Light';
+        src: font-url( $font_family_name + "-Light.eot");
+        src: font-url( $font_family_name + "-Light.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Light.woff") format("woff"), font-url( $font_family_name + "-Light.ttf") format("truetype"), font-url( $font_family_name + "-Light.svg#LegalTenderRegular") format("svg");
+        font-weight: 300;
+        font-style: normal;
+    }
+    @font-face {
+        font-family:  $font_family_name + '-LightItalic';
+        src: font-url( $font_family_name + "-LightItalic.eot");
+        src: font-url( $font_family_name + "-LightItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-LightItalic.woff") format("woff"), font-url( $font_family_name + "-LightItalic.ttf") format("truetype"), font-url( $font_family_name + "-LightItalic.svg#LegalTenderRegular") format("svg");
+        font-weight: 300;
+        font-style: italic;
+    }
+    /*Open Sans regular */
+    @font-face {
+        font-family:  $font_family_name + '-Regular';
+        src: font-url( $font_family_name + "-Regular.eot");
+        src: font-url( $font_family_name + "-Regular.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Regular.woff") format("woff"), font-url( $font_family_name + "-Regular.ttf") format("truetype"), font-url( $font_family_name + "-Regular.svg#LegalTenderRegular") format("svg");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /*Open Sans regular italic*/
+    @font-face {
+        font-family:  $font_family_name + '-RegularItalic';
+        src: font-url( $font_family_name + "-RegularItalic.eot");
+        src: font-url( $font_family_name + "-RegularItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-RegularItalic.woff") format("woff"), font-url( $font_family_name + "-RegularItalic.ttf") format("truetype"), font-url( $font_family_name + "-RegularItalic.svg#LegalTenderRegular") format("svg");
+        font-weight: 400;
+        font-style: italic;
+    }
+
+
+    /*Open Sans medium */
+    @font-face {
+        font-family:  $font_family_name + '-Medium';
+        src: font-url( $font_family_name + "-Medium.eot");
+        src: font-url( $font_family_name + "-Medium.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Medium.woff") format("woff"), font-url( $font_family_name + "-Medium.ttf") format("truetype"), font-url( $font_family_name + "-Medium.svg#LegalTenderRegular") format("svg");
+        font-weight: 600;
+        font-style: normal;
+    }
+
+
+    /*Open Sans medium italic */
+    @font-face {
+        font-family:  $font_family_name + '-MediumItalic';
+        src: font-url( $font_family_name + "-MediumItalic.eot");
+        src: font-url( $font_family_name + "-MediumItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-MediumItalic.woff") format("woff"), font-url( $font_family_name + "-MediumItalic.ttf") format("truetype"), font-url( $font_family_name + "-MediumItalic.svg#LegalTenderRegular") format("svg");
+        font-weight: 600;
+        font-style: italic;
+    }
+
+
+    /*Open Sans bold */
+    @font-face {
+        font-family:  $font_family_name + '-Bold';
+        src: font-url( $font_family_name + "-Bold.eot");
+        src: font-url( $font_family_name + "-Bold.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Bold.woff") format("woff"), font-url( $font_family_name + "-Bold.ttf") format("truetype"), font-url( $font_family_name + "-Bold.svg#LegalTenderRegular") format("svg");
+        font-weight: 700;
+        font-style: normal;
+    }
+
+
+
+    /*Open Sans bold italic */
+    @font-face {
+        font-family:  $font_family_name + '-BoldItalic';
+        src: font-url( $font_family_name + "-BoldItalic.eot");
+        src: font-url( $font_family_name + "-BoldItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-BoldItalic.woff") format("woff"), font-url( $font_family_name + "-BoldItalic.ttf") format("truetype"), font-url( $font_family_name + "-BoldItalic.svg#LegalTenderRegular") format("svg");
+        font-weight: 700;
+        font-style: italic;
+    }
+
+
+    /*Open Sans ULTRA bold  */
+    @font-face {
+        font-family:  $font_family_name + '-Extrabold';
+        src: font-url( $font_family_name + "-ExtraBold.eot");
+        src: font-url( $font_family_name + "-ExtraBold.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Extrabold.woff") format("woff"), font-url( $font_family_name + "-ExtraBold.ttf") format("truetype"), font-url( $font_family_name + "-Extrabold.svg#LegalTenderRegular") format("svg");
+        font-weight: 800;
+        font-style: normal;
+    }
+
+
+    /*Open Sans ULTRA bold italic */
+    @font-face {
+        font-family:  $font_family_name + '-ExtraBoldItalic';
+        src: font-url( $font_family_name + "-ExtraBoldItalic.eot");
+        src: font-url( $font_family_name + "-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-ExtraBoldItalic.woff") format("woff"), font-url( $font_family_name + "-ExtraBoldItalic.ttf") format("truetype"), font-url( $font_family_name + "-ExtraBoldItalic.svg#LegalTenderRegular") format("svg");
+        font-weight: 800;
+        font-style: italic;
+    }
+
+/*setup variablef fox future mixin f100, f200*/
+
+
+    /*Declare font in  CSS*/
+    /*font setup*/
+    $font-thin          :               $font_family_name + '-Thin';
+    $font-thin-italic   :               $font_family_name + '-ThinItalic';
+    $font-light         :               $font_family_name + '-Light';
+    $font-light-italic  :               $font_family_name + '-LightItalic';
+    $font-regular       :               $font_family_name + '-Regular';
+    $font-regular-italic:               $font_family_name + '-RegularItalic';
+    $font-medium        :               $font_family_name + '-Medium';
+    $font-medium-italic :               $font_family_name + '-MediumItalic';
+    $font-bold          :               $font_family_name + '-Bold';
+    $font-bold-italic   :               $font_family_name + '-BoldItalic';
+    $font-black         :               $font_family_name + '-ExtraBold';
+    $font-black-italic  :               $font_family_name + '-ExtraBoldItalic';
+
+
+
+
+    html, body,
+    h1, h2, h3, h4, h5, h6,
+    code,
+    pre {
+      font-family: $font-regular ;
+    }
+
+/*setup mixins for f100, f200*/
+
+    %f100 {
+        @include setupf100($font-thin);
+    }
+    %f100i {
+        @include setupf100($font-thin-italic);
+    }
+    %f300 {
+        @include setupf300($font-light);
+    }
+    %f300i {
+        @include setupf300i($font-light-italic);
+    }
+    %f400 {
+        @include setupf400($font-regular);
+    }
+    %f400i {
+        @include setupf400i($font-regular-italic);
+    }
+    %f500 {
+        @include setupf500($font-medium);
+    }
+    %f500i {
+        @include setupf500i($font-medium-italic);
+    }
+    %f700 {
+        @include setupf700($font-bold);
+    }
+    %f700i {
+        @include setupf700i($font-bold-italic);
+    }
+    %f900 {
+        @include setupf900($font-black);
+    }
+    %f900i {
+        @include setupf900i($font-black-italic);
+    }
+
+}
