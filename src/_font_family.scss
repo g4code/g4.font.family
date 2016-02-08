@@ -82,41 +82,41 @@
         font-style: italic;
     }
 
-@mixin font_family($font_family_name) {
+@mixin font_family($font_family_name, $path) {
     /*loading fonts*/
     @font-face {
         font-family:  $font_family_name + '-Thin';
-        src: font-url( $font_family_name + "-Thin.eot");
-        src: font-url( $font_family_name + "-Thin.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Thin.woff") format("woff"), font-url( $font_family_name + "-Thin.ttf") format("truetype"), font-url( $font_family_name + "-Thin.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-Thin.eot");
+        src: font-url( $path + $font_family_name + "-Thin.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-Thin.woff") format("woff"), font-url( $path + $font_family_name + "-Thin.ttf") format("truetype"), font-url( $path + $font_family_name + "-Thin.svg#LegalTenderRegular") format("svg");
         font-weight: 100;
         font-style: normal;
     }
     @font-face {
         font-family:  $font_family_name + '-ThinItalic';
-        src: font-url( $font_family_name + "-ThinItalic.eot");
-        src: font-url( $font_family_name + "-ThinItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-ThinItalic.woff") format("woff"), font-url( $font_family_name + "-ThinItalic.ttf") format("truetype"), font-url( $font_family_name + "-ThinItalic.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-ThinItalic.eot");
+        src: font-url( $path + $font_family_name + "-ThinItalic.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-ThinItalic.woff") format("woff"), font-url( $path + $font_family_name + "-ThinItalic.ttf") format("truetype"), font-url( $path + $font_family_name + "-ThinItalic.svg#LegalTenderRegular") format("svg");
         font-weight: 100;
         font-style: normal;
     }
     @font-face {
         font-family:  $font_family_name + '-Light';
-        src: font-url( $font_family_name + "-Light.eot");
-        src: font-url( $font_family_name + "-Light.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Light.woff") format("woff"), font-url( $font_family_name + "-Light.ttf") format("truetype"), font-url( $font_family_name + "-Light.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-Light.eot");
+        src: font-url( $path + $font_family_name + "-Light.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-Light.woff") format("woff"), font-url( $path + $font_family_name + "-Light.ttf") format("truetype"), font-url( $path + $font_family_name + "-Light.svg#LegalTenderRegular") format("svg");
         font-weight: 300;
         font-style: normal;
     }
     @font-face {
         font-family:  $font_family_name + '-LightItalic';
-        src: font-url( $font_family_name + "-LightItalic.eot");
-        src: font-url( $font_family_name + "-LightItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-LightItalic.woff") format("woff"), font-url( $font_family_name + "-LightItalic.ttf") format("truetype"), font-url( $font_family_name + "-LightItalic.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-LightItalic.eot");
+        src: font-url( $path + $font_family_name + "-LightItalic.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-LightItalic.woff") format("woff"), font-url( $path + $font_family_name + "-LightItalic.ttf") format("truetype"), font-url( $path + $font_family_name + "-LightItalic.svg#LegalTenderRegular") format("svg");
         font-weight: 300;
         font-style: italic;
     }
     /*Open Sans regular */
     @font-face {
         font-family:  $font_family_name + '-Regular';
-        src: font-url( $font_family_name + "-Regular.eot");
-        src: font-url( $font_family_name + "-Regular.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Regular.woff") format("woff"), font-url( $font_family_name + "-Regular.ttf") format("truetype"), font-url( $font_family_name + "-Regular.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-Regular.eot");
+        src: font-url( $path + $font_family_name + "-Regular.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-Regular.woff") format("woff"), font-url( $path + $font_family_name + "-Regular.ttf") format("truetype"), font-url( $path + $font_family_name + "-Regular.svg#LegalTenderRegular") format("svg");
         font-weight: 400;
         font-style: normal;
     }
@@ -124,8 +124,8 @@
     /*Open Sans regular italic*/
     @font-face {
         font-family:  $font_family_name + '-RegularItalic';
-        src: font-url( $font_family_name + "-RegularItalic.eot");
-        src: font-url( $font_family_name + "-RegularItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-RegularItalic.woff") format("woff"), font-url( $font_family_name + "-RegularItalic.ttf") format("truetype"), font-url( $font_family_name + "-RegularItalic.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-RegularItalic.eot");
+        src: font-url( $path + $font_family_name + "-RegularItalic.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-RegularItalic.woff") format("woff"), font-url( $path + $font_family_name + "-RegularItalic.ttf") format("truetype"), font-url( $path + $font_family_name + "-RegularItalic.svg#LegalTenderRegular") format("svg");
         font-weight: 400;
         font-style: italic;
     }
@@ -134,8 +134,8 @@
     /*Open Sans medium */
     @font-face {
         font-family:  $font_family_name + '-Medium';
-        src: font-url( $font_family_name + "-Medium.eot");
-        src: font-url( $font_family_name + "-Medium.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Medium.woff") format("woff"), font-url( $font_family_name + "-Medium.ttf") format("truetype"), font-url( $font_family_name + "-Medium.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-Medium.eot");
+        src: font-url( $path + $font_family_name + "-Medium.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-Medium.woff") format("woff"), font-url( $path + $font_family_name + "-Medium.ttf") format("truetype"), font-url( $path + $font_family_name + "-Medium.svg#LegalTenderRegular") format("svg");
         font-weight: 600;
         font-style: normal;
     }
@@ -144,8 +144,8 @@
     /*Open Sans medium italic */
     @font-face {
         font-family:  $font_family_name + '-MediumItalic';
-        src: font-url( $font_family_name + "-MediumItalic.eot");
-        src: font-url( $font_family_name + "-MediumItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-MediumItalic.woff") format("woff"), font-url( $font_family_name + "-MediumItalic.ttf") format("truetype"), font-url( $font_family_name + "-MediumItalic.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-MediumItalic.eot");
+        src: font-url( $path + $font_family_name + "-MediumItalic.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-MediumItalic.woff") format("woff"), font-url( $path + $font_family_name + "-MediumItalic.ttf") format("truetype"), font-url( $path + $font_family_name + "-MediumItalic.svg#LegalTenderRegular") format("svg");
         font-weight: 600;
         font-style: italic;
     }
@@ -154,8 +154,8 @@
     /*Open Sans bold */
     @font-face {
         font-family:  $font_family_name + '-Bold';
-        src: font-url( $font_family_name + "-Bold.eot");
-        src: font-url( $font_family_name + "-Bold.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Bold.woff") format("woff"), font-url( $font_family_name + "-Bold.ttf") format("truetype"), font-url( $font_family_name + "-Bold.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-Bold.eot");
+        src: font-url( $path + $font_family_name + "-Bold.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-Bold.woff") format("woff"), font-url( $path + $font_family_name + "-Bold.ttf") format("truetype"), font-url( $path + $font_family_name + "-Bold.svg#LegalTenderRegular") format("svg");
         font-weight: 700;
         font-style: normal;
     }
@@ -165,8 +165,8 @@
     /*Open Sans bold italic */
     @font-face {
         font-family:  $font_family_name + '-BoldItalic';
-        src: font-url( $font_family_name + "-BoldItalic.eot");
-        src: font-url( $font_family_name + "-BoldItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-BoldItalic.woff") format("woff"), font-url( $font_family_name + "-BoldItalic.ttf") format("truetype"), font-url( $font_family_name + "-BoldItalic.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-BoldItalic.eot");
+        src: font-url( $path + $font_family_name + "-BoldItalic.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-BoldItalic.woff") format("woff"), font-url( $path + $font_family_name + "-BoldItalic.ttf") format("truetype"), font-url( $path + $font_family_name + "-BoldItalic.svg#LegalTenderRegular") format("svg");
         font-weight: 700;
         font-style: italic;
     }
@@ -175,8 +175,8 @@
     /*Open Sans ULTRA bold  */
     @font-face {
         font-family:  $font_family_name + '-Extrabold';
-        src: font-url( $font_family_name + "-ExtraBold.eot");
-        src: font-url( $font_family_name + "-ExtraBold.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-Extrabold.woff") format("woff"), font-url( $font_family_name + "-ExtraBold.ttf") format("truetype"), font-url( $font_family_name + "-Extrabold.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-ExtraBold.eot");
+        src: font-url( $path + $font_family_name + "-ExtraBold.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-Extrabold.woff") format("woff"), font-url( $path + $font_family_name + "-ExtraBold.ttf") format("truetype"), font-url( $path + $font_family_name + "-Extrabold.svg#LegalTenderRegular") format("svg");
         font-weight: 800;
         font-style: normal;
     }
@@ -185,8 +185,8 @@
     /*Open Sans ULTRA bold italic */
     @font-face {
         font-family:  $font_family_name + '-ExtraBoldItalic';
-        src: font-url( $font_family_name + "-ExtraBoldItalic.eot");
-        src: font-url( $font_family_name + "-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), font-url( $font_family_name + "-ExtraBoldItalic.woff") format("woff"), font-url( $font_family_name + "-ExtraBoldItalic.ttf") format("truetype"), font-url( $font_family_name + "-ExtraBoldItalic.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-ExtraBoldItalic.eot");
+        src: font-url( $path + $font_family_name + "-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-ExtraBoldItalic.woff") format("woff"), font-url( $path + $font_family_name + "-ExtraBoldItalic.ttf") format("truetype"), font-url( $path + $font_family_name + "-ExtraBoldItalic.svg#LegalTenderRegular") format("svg");
         font-weight: 800;
         font-style: italic;
     }
