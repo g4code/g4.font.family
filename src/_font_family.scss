@@ -264,9 +264,9 @@
 
     /*Open Sans ULTRA bold  */
     @font-face {
-        font-family:  $font_family_name + '-Extrabold';
+        font-family:  $font_family_name + '-ExtraBold';
         src: font-url( $path + $font_family_name + "-ExtraBold.eot");
-        src: font-url( $path + $font_family_name + "-ExtraBold.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-Extrabold.woff") format("woff"), font-url( $path + $font_family_name + "-ExtraBold.ttf") format("truetype"), font-url( $path + $font_family_name + "-Extrabold.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name + "-ExtraBold.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name + "-ExtraBold.woff") format("woff"), font-url( $path + $font_family_name + "-ExtraBold.ttf") format("truetype"), font-url( $path + $font_family_name + "-ExtraBold.svg#LegalTenderRegular") format("svg");
         font-weight: 800;
         font-style: normal;
     }
