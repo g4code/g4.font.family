@@ -374,7 +374,7 @@
     @font-face {
         font-family:  $font_family_name2 + '-ExtraBold';
         src: font-url( $path + $font_family_name2 + "-ExtraBold.eot");
-        src: font-url( $path + $font_family_name2 + "-ExtraBold.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name2 + "-ExtraBold.woff") format("woff"), font-url( $path + $font_family_name2 + "-ExtraBold.ttf") format("truetype"), font-url( $path + $font_family_name2 + "-Extrabold.svg#LegalTenderRegular") format("svg");
+        src: font-url( $path + $font_family_name2 + "-ExtraBold.eot?#iefix") format("embedded-opentype"), font-url( $path + $font_family_name2 + "-ExtraBold.woff") format("woff"), font-url( $path + $font_family_name2 + "-ExtraBold.ttf") format("truetype"), font-url( $path + $font_family_name2 + "-ExtraBold.svg#LegalTenderRegular") format("svg");
         font-weight: 800;
         font-style: normal;
     }
