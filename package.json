@@ -1,6 +1,6 @@
 {
   "name": "g4.font.family",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "font family mixin library",
   "main": "index.js",
   "scripts": {
