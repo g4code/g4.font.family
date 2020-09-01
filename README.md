@@ -4,19 +4,10 @@ Font Family
 > g4.font.family - [compass](http://http://compass-style.org/) mixin library
 
 ## Install
-Via Bower
+Via npm
 
 ```sh
-bower install g4.font.family
-```
-
-Open **config.rb** file in to compass root directory and add ( or edit ) font URL
-
-```sh
-http_fonts_path            = "/bower/g4.font.family/src/fonts/"
-```
-```sh
-fonts_dir                  = "../public//bower/g4.font.family/src/fonts/"
+npm install g4code.font.family
 ```
 
 ## Usage
@@ -26,7 +17,7 @@ fonts_dir                  = "../public//bower/g4.font.family/src/fonts/"
 Import bower package mixin for font-family in to project for example
 
 ```sh
-@import             "../../public/bower/g4.font.family/src/font_family";
+@import             "../../public/node_modules/g4code.font.family/src/font_family";
 ```
 Now you need to declare font-family which you want to have on site
 
@@ -67,7 +58,7 @@ You have possibility to load different fonts weight
 for example:
 
 ```sh
-.come_selector {
+.some_selector {
     @extend %f700;
 }
 ```
