@@ -1,6 +1,6 @@
 {
-  "name": "g4.font.family",
-  "version": "2.0.0",
+  "name": "g4code.font.family",
+  "version": "2.1.0",
   "description": "font family mixin library",
   "main": "index.js",
   "scripts": {
@@ -11,13 +11,11 @@
     "url": "git+https://github.com/g4code/g4.font.family.git"
   },
   "keywords": [
-    "g4.font.family"
+    "g4code.font.family"
   ],
   "author": "G4 Code <office@g4code.com>",
   "maintainers": [
-    "Drasko Gomboc <drasko.gomboc@gmail.com>",
-    "Zeljko Simic <zeljkosbgd@gmail.com>",
-    "Nemanja Mirkov <mirkovnemanja@gmail.com>"
+    "Ana Kuljic <ana.kuljic@codeplicity.com>"
   ],
   "license": "MIT",
   "bugs": {
